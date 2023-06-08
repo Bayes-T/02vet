@@ -1,0 +1,12 @@
+
+<div class="main__page">
+    <div class="container display">
+    <app-citas
+    (onDeletePet)="onDeletePet($event)"
+    [citasMascotas] = "listadoCitas"></app-citas>
+
+    <app-formulario 
+    (onNewPet) = onNewPet($event)
+    ></app-formulario>
+</div>
+</div>

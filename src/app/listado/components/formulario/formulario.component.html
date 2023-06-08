@@ -1,0 +1,45 @@
+<form class="formulario" (ngSubmit)="addPet()">
+    <fieldset>
+
+        <legend>Agenda tu cita</legend>
+
+        <div class="formulario__campos">
+
+        <div class="formulario__campo">   
+        <label>Nombre de la mascota: </label>
+        <input 
+        [(ngModel)]="mascota.mascota" 
+        
+        name="mascota2" 
+        type="text" 
+        placeholder="Yuki">
+        </div>
+
+        <div class="formulario__campo">
+        <label>Edad de la mascota: </label>
+        <input 
+        [(ngModel)]="mascota.edad"
+        
+        name="edad2"
+        type="number" 
+        placeholder="2">
+        </div>
+
+        <div class="formulario__campo">
+        <label>Hora de la cita: </label>
+        <input 
+        [(ngModel)]="mascota.hora"
+        
+        name="hora2"
+        type="text" 
+        placeholder="5 pm">
+        </div>
+
+         </div> <!-- Fin de formulario__campos-->
+    </fieldset>
+
+    <div class="centrar">
+        <button  type="submit" class="boton">Agendar</button>
+        </div>
+
+</form>

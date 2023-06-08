@@ -1,0 +1,12 @@
+.main__page {
+    background-color: #89ac76;
+    height: 350px;
+    display: flex;
+    padding: 20px;
+}
+
+.display {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 30px;
+}

@@ -1,0 +1,9 @@
+.bg__img {
+    background-image: url(../../../../assets/vetheader.jpeg); 
+    background-size: cover;
+    height: 500px;
+}
+
+.bg__margin {
+    padding-top: 20px;
+}

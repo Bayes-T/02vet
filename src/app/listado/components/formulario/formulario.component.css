@@ -1,0 +1,29 @@
+.formulario {
+    color: white;
+}
+
+.formulario__campos {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.formulario__campo label{
+    width: 180px;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+}
+
+.boton {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #567346;
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+

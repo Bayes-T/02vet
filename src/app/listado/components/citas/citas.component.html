@@ -1,0 +1,15 @@
+
+<div class="citas">
+
+    <h2>Citas programadas</h2>
+    
+    <ul class="citas__lista">
+        <li *ngFor="let mascota of citasMascotas" class="citas__cita">
+            <span>
+            {{mascota.mascota}} - {{mascota.edad}} años - Cita: {{mascota.hora}} </span>
+            <button (click)="deleteById(mascota.id)" class="boton">X</button>
+
+            <button (click)="editById(mascota.id)" class="boton boton__ed">Ed</button>
+        </li>
+    </ul>
+</div>
