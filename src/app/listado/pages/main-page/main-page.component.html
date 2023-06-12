@@ -3,6 +3,7 @@
     <div class="container display">
     <app-citas
     (onDeletePet)="onDeletePet($event)"
+    (onEditPet)="emitEditById($event)"
     [citasMascotas] = "listadoCitas"></app-citas>
 
     <app-formulario 

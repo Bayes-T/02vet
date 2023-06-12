@@ -22,4 +22,8 @@ export class MainPageComponent {
   onDeletePet(id:string):void{
     this.listadoservice.DeletebyId(id)
   }
+
+  emitEditById(id:string):void {
+    this.listadoservice.emitEditById(id)
+  }
 }

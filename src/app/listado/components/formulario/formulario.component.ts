@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Output, ViewChild } from '@angular/core';
 import {v4 as uuid} from 'uuid'
 
 
@@ -39,9 +39,16 @@ export class FormularioComponent {
     this.onEditPet.emit(this.mascota)
   }
 
-  onEditbyId(id:string):void{
-    this.listadoservice.editById(id)
-  }
+  @ViewChild("focus")
+  public inputForm! : ElementRef<HTMLInputElement>
 
+
+  onFocusInput(){
+    this.inputForm.nativeElement.focus()
+  }
+  onEditbyId(id:string):void{
+    this.onFocusInput()
+    this.listadoservice.emitEditById(id)
+  }
 
 }

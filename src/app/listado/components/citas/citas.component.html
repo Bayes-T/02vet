@@ -9,7 +9,8 @@
             {{mascota.mascota}} - {{mascota.edad}} años - Cita: {{mascota.hora}} </span>
             <button (click)="deleteById(mascota.id)" class="boton">X</button>
 
-            <button (click)="editById(mascota.id)" class="boton boton__ed">Ed</button>
+            <button (click)="emitEditById(mascota.id)" 
+            class="boton">Ed</button>
         </li>
     </ul>
 </div>
